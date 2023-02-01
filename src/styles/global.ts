@@ -12,6 +12,19 @@ html, body, #root {
 
 body {
     background-color: #F8FDFF;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
 }
 
 `

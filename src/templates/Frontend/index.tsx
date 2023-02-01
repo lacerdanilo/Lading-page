@@ -1,4 +1,5 @@
 import React from 'react'
+import { Header } from '../../organisms/Header';
 import * as S from "./styled"
 type FrontendProps = {
     children: React.ReactNode;
@@ -6,6 +7,8 @@ type FrontendProps = {
 
 export const Frontend = ({children}: FrontendProps) => {
   return (
-    <S.Container>Teste Frontend{children}</S.Container>
+    <S.Container>
+        <Header/>
+    </S.Container>
   )
 }
