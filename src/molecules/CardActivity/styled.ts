@@ -11,8 +11,9 @@ export const Card = styled.div`
   overflow: hidden;
 
   position: absolute;
+  animation: showToLeft 0.5s linear forwards;
   top: 105px;
-  left: 50px;
+  left: 0;
 
   small {
     font-size: 20px;
@@ -64,4 +65,16 @@ export const Card = styled.div`
       top: -72px;
     }
   }
+
+  @keyframes showToLeft {
+    from {
+      opacity: 0;
+      left: 0;
+    } 
+    to{
+      opacity: 1;
+      left: 50px;
+    }   
+  }
+
 `;
